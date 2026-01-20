@@ -37,9 +37,9 @@ function App() {
     <div className="min-h-screen w-full from-slate-50 to-slate-100">
       <div className="mx-auto max-w-6xl px-4 py-10">
         {/* Header */}
-        <div className="text-center flex items-center justify-center gap-4">
+        <div className="flex items-center justify-center gap-2 md:gap-4">
           <img src={logo} alt="Logo" className="w-20 h-20 md:w-40 md:h-40"/>
-          <h1 className="text-2xl md:text-4xl font-bold text-slate-900">
+          <h1 className="text-xl md:text-4xl font-bold text-slate-900">
             สถาปนา ศทท.สส.ทหาร ปีที่ 36
           </h1>
         </div>
