@@ -1,25 +1,30 @@
 import "./App.css";
+import logo from "./assets/logo.png"
+import image1 from "./assets/image1.png";
+import image2 from "./assets/image2.png";
+import image3 from "./assets/image3.png";
+import image4 from "./assets/image4.png";
 
 const cards = [
   {
     title: "ภาพผู้บังคับบัญชาในอดีต",
     url: "https://drive.google.com/drive/folders/1fd4OOw8U373ryF9sugXzIsiR7k_yHYaQ?usp=sharing",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmgkix4DEJoToCFKP-g8ztCYa9bIuxAC3pA&s",
+    img: image1,
   },
   {
     title: "ภาพงานสถาปนา",
     url: "https://drive.google.com/drive/folders/1sqrTxyIRSfjuKOYDXe7N9iJ-rKphAcXR?usp=sharing",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmgkix4DEJoToCFKP-g8ztCYa9bIuxAC3pA&s",
+    img: image2,
   },
   {
     title: "ถ่ายทอดสดงานสถาปนา",
     url: "https://www.youtube.com/",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmgkix4DEJoToCFKP-g8ztCYa9bIuxAC3pA&s",
+    img: image3,
   },
   {
     title: "AI สำหรับงานสถาปนา",
     url: "https://gemini.google.com/gem/1cv8OIDrMiFX4cr2-a9k2O_qpySmJMKih?usp=sharing",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmgkix4DEJoToCFKP-g8ztCYa9bIuxAC3pA&s",
+    img: image4,
   },
 ];
 
@@ -32,7 +37,8 @@ function App() {
     <div className="min-h-screen w-full from-slate-50 to-slate-100">
       <div className="mx-auto max-w-6xl px-4 py-10">
         {/* Header */}
-        <div className="text-center">
+        <div className="text-center flex items-center justify-center gap-4">
+          <img src={logo} alt="Logo" className="w-20 h-20 md:w-40 md:h-40"/>
           <h1 className="text-2xl md:text-4xl font-bold text-slate-900">
             สถาปนา ศทท.สส.ทหาร ปีที่ 36
           </h1>
